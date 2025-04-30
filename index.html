@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Problemas con Vectores</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>💻 Problemas con Vectores</h1>
+    <h1>💻 Problemas de Vectores</h1>
 
-    <!-- Problema 1 -->
+    <!-- Problema 1 -->
     <section>
-      <h2>1. Promedio y mayores al promedio</h2>
-      <textarea id="valores1" placeholder="Ingresa 50 números separados por coma"></textarea>
-      <button onclick="problema1()">Calcular</button>
+      <h2>1. Promedio y mayores</h2>
+      <textarea id="valores1" placeholder="50 números separados por coma"></textarea>
+      <div class="btn-group">
+        <button onclick="autofill1()">Autorrellenar</button>
+        <button onclick="problema1()">Calcular</button>
+      </div>
       <pre id="resultado1"></pre>
     </section>
 
-    <!-- Problema 2 -->
+    <!-- Problema 2 -->
     <section>
-      <h2>2. Suma de dos vectores A y B</h2>
-      <textarea id="vectorA2" placeholder="Ingresa 45 números para A"></textarea>
-      <textarea id="vectorB2" placeholder="Ingresa 45 números para B"></textarea>
-      <button onclick="problema2()">Sumar</button>
+      <h2>2. Suma de vectores A y B (45)</h2>
+      <textarea id="vectorA2" placeholder="45 números para A"></textarea>
+      <textarea id="vectorB2" placeholder="45 números para B"></textarea>
+      <div class="btn-group">
+        <button onclick="autofill2A()">Autorrellenar&nbsp;A</button>
+        <button onclick="autofill2B()">Autorrellenar&nbsp;B</button>
+        <button onclick="problema2()">Sumar</button>
+      </div>
       <pre id="resultado2"></pre>
     </section>
 
-    <!-- Problema 3 -->
+    <!-- Problema 3 -->
     <section>
-      <h2>3. Elemento mayor y su posición</h2>
-      <textarea id="valores3" placeholder="Ingresa 20 números separados por coma"></textarea>
-      <button onclick="problema3()">Buscar</button>
+      <h2>3. Mayor valor (20)</h2>
+      <textarea id="valores3" placeholder="20 números separados por coma"></textarea>
+      <div class="btn-group">
+        <button onclick="autofill3()">Autorrellenar</button>
+        <button onclick="problema3()">Buscar</button>
+      </div>
       <pre id="resultado3"></pre>
     </section>
 
-    <!-- Problema 5 -->
+    <!-- Problema 5 -->
     <section>
-      <h2>5. Contar positivos, negativos, ceros</h2>
-      <textarea id="valores5" placeholder="Ingresa 300 números separados por coma"></textarea>
-      <button onclick="problema5()">Contar</button>
+      <h2>5. Conteo y suma (300)</h2>
+      <textarea id="valores5" placeholder="300 números separados por coma"></textarea>
+      <div class="btn-group">
+        <button onclick="autofill5()">Autorrellenar</button>
+        <button onclick="problema5()">Contar</button>
+      </div>
       <pre id="resultado5"></pre>
     </section>
 
-    <!-- Problema 6 -->
+    <!-- Problema 6 -->
     <section>
-      <h2>6. Producto cruzado de vectores A y B</h2>
-      <textarea id="vectorA6" placeholder="Ingresa 20 números para A"></textarea>
-      <textarea id="vectorB6" placeholder="Ingresa 20 números para B"></textarea>
-      <button onclick="problema6()">Multiplicar</button>
+      <h2>6. Producto cruzado A·B (20)</h2>
+      <textarea id="vectorA6" placeholder="20 números para A"></textarea>
+      <textarea id="vectorB6" placeholder="20 números para B"></textarea>
+      <div class="btn-group">
+        <button onclick="autofill6A()">Autorrellenar&nbsp;A</button>
+        <button onclick="autofill6B()">Autorrellenar&nbsp;B</button>
+        <button onclick="problema6()">Multiplicar</button>
+      </div>
       <pre id="resultado6"></pre>
     </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
   </div>
 
   <script src="script.js"></script>
